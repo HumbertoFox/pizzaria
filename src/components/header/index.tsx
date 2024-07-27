@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import LogoPizzaria from '@/assets/logo-pizza-fast-food.png';
 import Link from 'next/link';
+import LogoPizzaria from '@/assets/logo-pizza-fast-food.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 

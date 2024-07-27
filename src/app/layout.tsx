@@ -1,11 +1,14 @@
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
 import '@/style/globals.css';
+
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Pizzaria',
   description: 'A melhor Pizzaria com a Melhor Pizza da Região!',
   icons: {
-    icon: './src/assets/favicon.ico'
+    icon: 'src/assets/favicon.ico'
   }
 };
 
@@ -16,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body>{children}</body>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 };
