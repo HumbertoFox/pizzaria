@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: 'Pizzaria',
   description: 'A melhor Pizzaria com a Melhor Pizza da Região!',
   icons: {
-    icon: 'src/assets/favicon.ico'
+    icon: '/favicon.ico'
   }
 };
 

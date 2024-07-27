@@ -7,7 +7,7 @@ import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 export default function HeaderComponent() {
     return (
         <header className='flex pt-2.5'>
-            <div className='flex items-center gap-2.5 font-sans font-bold'>
+            <div className='flex items-center gap-2.5 font-bold'>
                 <Image src={LogoPizzaria} width={100} height={100} alt='Logo Pizzaria' priority />
                 <div>
                     <Link href={'/'}>
@@ -26,7 +26,7 @@ export default function HeaderComponent() {
                         <p>FINALISE SEU PEDIDO</p>
                         <div className='flex gap-1.5'>
                             <FontAwesomeIcon icon={faCartShopping} className='w-5' />
-                            <span className='text-xl font-bold'>R$</span>
+                            <span className='text-xl font-sans font-bold'>R$</span>
                         </div>
                     </Link>
                 </div>
