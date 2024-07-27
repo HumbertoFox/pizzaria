@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function MenuComponent() {
     return (
-        <nav className='flex justify-between gap-x-3.5 font-sans font-bold'>
+        <nav className='flex w-full justify-between gap-x-3.5 font-sans font-bold'>
             <Link href={'/'} className='p-2.5'>PROMOÇÕES</Link>
             <Link href={'/'} className='p-2.5'>PIZZAS</Link>
             <Link href={'/'} className='p-2.5'>MASSAS</Link>
