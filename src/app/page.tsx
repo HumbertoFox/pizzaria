@@ -1,5 +1,6 @@
 import HeaderComponent from '@/components/header';
 import MenuComponent from '@/components/menu';
+import PizzasComponent from '@/components/pizza';
 import PromotionComponent from '@/components/promotion';
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <HeaderComponent />
       <MenuComponent />
       <PromotionComponent />
+      <PizzasComponent />
     </main>
   );
 };

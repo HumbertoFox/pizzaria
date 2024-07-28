@@ -9,9 +9,9 @@ const slides = [SlideImage0, SlideImage1, SlideImage2, SlideImage3];
 
 export default function PromotionComponent() {
     return (
-        <div className='flex w-full overflow-hidden relative'>
+        <div className='flex w-full min-h-screen xl:min-h-full overflow-hidden relative' id='promotion'>
             {slides.map((element, index) => <Image src={element} key={index} style={{ width: '100%', height: '100%' }} alt='Image Pizzaria' priority />)}
-            <div className='absolute inset-0 flex items-center justify-between px-4'>
+            <div className='absolute inset-0 flex items-center justify-between'>
                 <button type='button' title='next' className='h-full'>
                     <ChevronLeft size={40} />
                 </button>
