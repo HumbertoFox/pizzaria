@@ -1,8 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import LogoPizzaria from '@/assets/logo-pizza-fast-food.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
+import { ShoppingCart } from 'react-feather';
 
 export default function HeaderComponent() {
     return (
@@ -19,7 +18,7 @@ export default function HeaderComponent() {
                 <Link href={'/'} className='flex flex-col'>
                     <p className='text-sm sm:text-xs'>FINALISE SEU PEDIDO</p>
                     <div className='flex items-center gap-1.5'>
-                        <FontAwesomeIcon icon={faCartShopping} className='w-5' />
+                        <ShoppingCart size={20} />
                         <span className='text-sm font-sans font-bold'>R$</span>
                     </div>
                 </Link>
