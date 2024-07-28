@@ -4,7 +4,7 @@ import PromotionComponent from '@/components/promotion';
 
 export default function Home() {
   return (
-    <main className='w-10/12'>
+    <main className='w-10/12 lg:w-full'>
       <HeaderComponent />
       <MenuComponent />
       <PromotionComponent />
