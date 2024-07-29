@@ -26,7 +26,7 @@ export default function PromotionComponent() {
     }, []);
     
     return (
-        <div className='relative w-full max-h-screen xl:min-h-full overflow-hidden' id='promotion'>
+        <div className='relative w-full max-h-screen xl:max-h-full overflow-hidden' id='promotion'>
             <div className='flex transition-transform duration-500 ease-out' style={{ transform: `translateX(-${curr * 100}%)` }}>
                 {slides.map((element, index) => (
                     <div key={index} className='w-full flex-shrink-0'>
@@ -35,10 +35,10 @@ export default function PromotionComponent() {
                 ))}
             </div>
             <div className='absolute inset-0 flex items-center justify-between'>
-                <button type='button' title='back' className='h-full' onClick={back}>
+                <button type='button' title='back' className='h-full opacity-0 duration-500 hover:opacity-100 button' onClick={back}>
                     <ChevronLeft size={40} />
                 </button>
-                <button type='button' title='next' className='h-full' onClick={next}>
+                <button type='button' title='next' className='h-full opacity-0 duration-500 hover:opacity-100 button' onClick={next}>
                     <ChevronRight size={40} />
                 </button>
             </div>

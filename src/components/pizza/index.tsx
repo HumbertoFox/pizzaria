@@ -21,7 +21,7 @@ export default function PizzasComponent() {
     }, []);
 
     return (
-        <div className='flex w-full max-h-screen xl:min-h-full overflow-hidden relative' id='pizzas'>
+        <div className='flex w-full max-h-screen xl:max-h-full overflow-hidden relative' id='pizzas'>
             <div className='flex transition-transform duration-500 ease-out' style={{ transform: `translateX(-${curr * 100}%)` }}>
                 {slides.map((element, index) => (
                     <div key={index} className='w-full flex-shrink-0'>
