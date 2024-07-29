@@ -5,7 +5,7 @@ import { ShoppingCart } from 'react-feather';
 
 export default function HeaderComponent() {
     return (
-        <header className='flex float-end pt-2.5'>
+        <header className='flex w-full justify-end pt-2.5 bg-amber-600'>
             <div className='flex items-center gap-2.5 font-bold'>
                 <Link href={'/'} className='flex flex-col items-center'>
                     <p className='text-sm sm:text-xs'>FAÇA SEU PEDIDO</p>
