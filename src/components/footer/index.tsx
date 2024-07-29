@@ -1,10 +1,10 @@
 import Link from "next/link"
-import { Facebook, Instagram, MessageCircle, PhoneCall, Smartphone, Twitter } from "react-feather";
+import { Facebook, Instagram, Map, MessageCircle, PhoneCall, Smartphone, Twitter } from "react-feather";
 
 export default function FooterComponent() {
     return (
-        <footer className='w-full flex justify-between'>
-            <div>
+        <footer className='w-full flex justify-between text-nowrap xl:text-sm'>
+            <div className="md:text-xs">
                 <h2>Contato</h2>
                 <Link href={'/'} className='flex items-center'>
                     <PhoneCall />
@@ -19,13 +19,14 @@ export default function FooterComponent() {
                     <p>+55 (81) 0123-4567</p>
                 </Link>
             </div>
-            <address>
+            <address className="md:text-xs">
+                <Map />
                 <p>Endereço:</p>
                 <p>PE-022, 344-Box-B, Nossa senhora da Conceição, Paulista-PE.</p>
                 <p>Paulista, 53.421-420, BR.</p>
                 <p>Contato: 81 98807-5408 - WhatsApp.</p>
             </address>
-            <div>
+            <div className="md:text-xs">
                 <h2>Redes Sociais</h2>
                 <Link href={'/'}>
                     <Instagram />
