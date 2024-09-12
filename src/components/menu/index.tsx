@@ -6,13 +6,22 @@ const ClassLinks = 'px-2.5 py-1.5 hover:bg-green-600 duration-700 hover:text-whi
 
 export default function MenuComponent({ isClicked }: ClickedMenu) {
     const [isVisible, setIsVisible] = useState(isClicked);
+    const [isWideScreen, setIsWideScreen] = useState(window.innerWidth > 790);
 
     useEffect(() => {
         setIsVisible(isClicked);
     }, [isClicked]);
 
+    useEffect(() => {
+        const handleResize = () => setIsWideScreen(window.innerWidth > 790);
+
+        window.addEventListener('resize', handleResize);
+
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
     return (
-        <nav className={`w-full flex justify-between font-sans text-sm font-bold bg-amber-500 sm:absolute sm:left-0 sm:flex-col sm:z-10 sm:w-32 sm:text-center ${isVisible ? 'hidden' : 'flex'}`}>
+        <nav className={`w-full flex justify-between font-sans text-sm font-bold bg-amber-500 sm:absolute sm:left-0 sm:flex-col sm:z-10 sm:w-32 sm:text-center ${isVisible && !isWideScreen && 'hidden'}`}>
             <Link href={'#promotion'} className={ClassLinks}>PROMOÇÕES</Link>
             <Link href={'#pizzas'} className={ClassLinks}>PIZZAS</Link>
             <Link href={'/'} className={ClassLinks}>MASSAS</Link>
