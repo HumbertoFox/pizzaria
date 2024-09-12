@@ -1,14 +1,29 @@
+'use client';
+import { useState } from 'react';
+import { HandleClicked } from '@/interfaces/interfaces';
+import { Menu, ShoppingCart, X } from 'react-feather';
 import Image from 'next/image';
 import Link from 'next/link';
 import LogoPizzaria from '@/assets/logo-pizza-fast-food.png';
-import { Menu, ShoppingCart, X } from 'react-feather';
 
-export default function HeaderComponent() {
+export default function HeaderComponent({ onClicked }: HandleClicked) {
+
+    const [isClickedMenu, setIsClickedMenu] = useState<boolean>(true);
+
+    const handleMenuClick = () => {
+        const newState = !isClickedMenu;
+        setIsClickedMenu(newState);
+        onClicked(newState);
+    };
+
     return (
         <header className='flex w-full pt-1 bg-amber-600'>
-            <div className='flex items-center relative'>
-                <Menu className='hidden left-3 sm:block absolute' />
-                <X className='hidden left-3 absolute' />
+            <div className='hidden sm:flex items-center relative cursor-pointer duration-500'>
+                {isClickedMenu ? (
+                    <Menu className='left-3 absolute duration-500' onClick={handleMenuClick} />
+                ) : (
+                    <X className='left-3 absolute duration-500' onClick={handleMenuClick} />
+                )}
             </div>
             <div className='w-full flex items-center justify-end gap-2.5 font-bold'>
                 <div className='flex gap-2.5 sm:flex-col'>
