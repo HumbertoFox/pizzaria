@@ -10,9 +10,9 @@ import ItemsComponents from '../items';
 export default function PizzasComponent() {
 
     return (
-        <div className='w-full min-h-screen xl:max-h-full' id='pizzas'>
+        <div className='w-full min-h-screen flex flex-col items-center xl:max-h-full px-3 pb-9' id='pizzas'>
             <h2 className='text-center font-bold text-4xl cursor-default'>Pizzas</h2>
-            <div className='grid grid-cols-[repeat(auto-fit,minmax(400px,1fr))] justify-items-center gap-5 pt-3 px-3 pb-9'>
+            <div className='grid grid-cols-[repeat(auto-fit,minmax(400px,1fr))] justify-items-center gap-5 pt-3'>
                 <ItemsComponents
                     name='Pizza 1'
                     size='Grande'
