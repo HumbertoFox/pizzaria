@@ -12,7 +12,7 @@ export default function Home() {
     setIsMenuClicked(clicked)
   };
   return (
-    <main className='w-10/12 lg:w-full sm:h-dvh'>
+    <main className='max-w-[1440px] mx-auto lg:w-full min-h-screen sm:min-w-[375px] '>
       <HeaderComponent onClicked={handleClicked} />
       <MenuComponent isClicked={isMenuClicked} />
       <PromotionComponent />

@@ -25,7 +25,7 @@ export default function MenuComponent({ isClicked }: ClickedMenu) {
         }
     }, []);
 
-    const navClassName = `w-full flex justify-between font-sans text-sm font-bold bg-amber-500 sm:absolute sm:left-0 sm:flex-col sm:z-10 sm:w-32 sm:text-center ${isVisible && !isWideScreen && 'hidden'}`;
+    const navClassName = `w-full flex justify-between font-sans text-sm font-bold bg-amber-500 animate-[detailsmsgDown_.7s_ease-in-out] sm:absolute sm:left-0 sm:flex-col sm:z-10 sm:w-32 sm:text-center sm:bg-amber-500/50 sm:rounded-b-md ${isVisible && !isWideScreen && 'hidden'}`;
 
     return (
         <nav className={navClassName}>

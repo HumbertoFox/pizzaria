@@ -17,7 +17,8 @@ export default function HeaderComponent({ onClicked }: HandleClicked) {
     };
 
     return (
-        <header className='flex w-full pt-1 bg-amber-600'>
+        <header className='flex w-full bg-amber-600 pt-1 px-3'>
+            <Image src={LogoPizzaria} className='w-[90px] duration-500 sm:hidden animate-[detailsmsgDown_.7s_ease-in-out]' alt='Logo Pizzaria' priority />
             <div className='hidden sm:flex items-center relative cursor-pointer duration-500'>
                 {isClickedMenu ? (
                     <Menu className='left-3 absolute duration-500' onClick={handleMenuClick} />
@@ -38,12 +39,12 @@ export default function HeaderComponent({ onClicked }: HandleClicked) {
                     <Link href={'/'} className='flex flex-col text-nowrap'>
                         <p className='text-sm sm:text-xs'>FINALISE SEU PEDIDO</p>
                         <div className='flex items-center gap-1.5'>
-                            <ShoppingCart size={20} />
+                            <ShoppingCart className='w-[20px]' />
                             <span className='text-sm font-sans font-bold'>R$</span>
                         </div>
                     </Link>
                 </div>
-                <Image src={LogoPizzaria} width={90} height={90} alt='Logo Pizzaria' priority />
+                <Image src={LogoPizzaria} className='w-[90px] duration-500 hidden sm:block animate-[detailsmsgDown_.7s_ease-in-out]' alt='Logo Pizzaria' priority />
             </div>
         </header>
     );

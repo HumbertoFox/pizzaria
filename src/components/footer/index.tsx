@@ -1,11 +1,11 @@
 import Link from 'next/link';
 import { Facebook, Instagram, Map, MessageCircle, PhoneCall, Smartphone, Twitter } from 'react-feather';
 
-const ClassLinksContacts = 'flex items-center gap-2 p-2';
+const ClassLinksContacts = 'flex items-center gap-2 p-1';
 
 export default function FooterComponent() {
     return (
-        <footer className='w-full flex flex-col items-center gap-3 text-nowrap p-2 xl:text-sm sm:flex-col sm:items-center'>
+        <footer className='w-full flex flex-col items-center gap-3 p-2 xl:text-sm sm:items-center sm:flex-col-reverse'>
             <address className='md:text-xs'>
                 <Map />
                 <p>Endereço:</p>
@@ -15,7 +15,7 @@ export default function FooterComponent() {
             </address>
             <div className='w-full flex justify-between'>
                 <div className='md:text-xs'>
-                    <h2 className='mx-auto'>Contato</h2>
+                    <h2 className='text-center'>Contato</h2>
                     <Link href={'/'} className={ClassLinksContacts}>
                         <PhoneCall />
                         <p>(81) 3012-3456</p>
@@ -29,7 +29,7 @@ export default function FooterComponent() {
                         <p>+55 (81) 0123-4567</p>
                     </Link>
                 </div>
-                <div className='flex flex-col justify-center items-center md:text-xs'>
+                <div className='flex flex-col justify-center gap-3 items-center md:text-xs'>
                     <h2>Redes Sociais</h2>
                     <div className='flex gap-4'>
                         <Link href={'/'}>

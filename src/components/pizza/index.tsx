@@ -1,33 +1,60 @@
 'use client';
-import { useEffect, useState } from 'react';
-import Image from 'next/image';
 import SlideImage0 from '@/assets/pizza-3870778_1920.jpg';
 import SlideImage1 from '@/assets/pizza-7340648_1920.jpg';
 import SlideImage2 from '@/assets/pizza-1239077_1920.jpg';
 import SlideImage3 from '@/assets/pizza-3000274_1920.jpg';
 import SlideImage4 from '@/assets/pizza-3604157_1920.jpg';
 import SlideImage5 from '@/assets/pizza-4205701_1920.jpg';
-
-const slides = [SlideImage0, SlideImage1, SlideImage2, SlideImage3, SlideImage4, SlideImage5];
+import ItemsComponents from '../items';
 
 export default function PizzasComponent() {
-    const [curr, setCurr] = useState(0);
-
-    const next = () => setCurr((curr) => (curr === slides.length - 1 ? 0 : curr + 1));
-
-    useEffect(() => {
-        const interval = setInterval(next, 4000);
-        return () => clearInterval(interval);
-    }, []);
 
     return (
-        <div className='flex w-full max-h-screen xl:max-h-full overflow-hidden relative' id='pizzas'>
-            <div className='flex transition-transform duration-500 ease-out' style={{ transform: `translateX(-${curr * 100}%)` }}>
-                {slides.map((element, index) => (
-                    <div key={index} className='w-full flex-shrink-0'>
-                        <Image src={element} width={1920} height={1186} alt='Image Pizzaria' priority aria-label='Previous Slide' />
-                    </div>
-                ))}
+        <div className='w-full min-h-screen xl:max-h-full' id='pizzas'>
+            <h2 className='text-center font-bold text-4xl cursor-default'>Pizzas</h2>
+            <div className='grid grid-cols-[repeat(auto-fit,minmax(400px,1fr))] justify-items-center gap-5 pt-3 px-3 pb-9'>
+                <ItemsComponents
+                    name='Pizza 1'
+                    size='Grande'
+                    price={45.50}
+                    details='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+                    image={SlideImage0}
+                />
+                <ItemsComponents
+                    name='Pizza 2'
+                    size='Grande'
+                    price={65.00}
+                    details='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+                    image={SlideImage1}
+                />
+                <ItemsComponents
+                    name='Pizza 3'
+                    size='Grande'
+                    price={55.50}
+                    details='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+                    image={SlideImage2}
+                />
+                <ItemsComponents
+                    name='Pizza 4'
+                    size='Media'
+                    price={65.00}
+                    details='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+                    image={SlideImage3}
+                />
+                <ItemsComponents
+                    name='Pizza 5'
+                    size='Media'
+                    price={65.00}
+                    details='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+                    image={SlideImage4}
+                />
+                <ItemsComponents
+                    name='Pizza 6'
+                    size='Media'
+                    price={65.00}
+                    details='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+                    image={SlideImage5}
+                />
             </div>
         </div>
     );
