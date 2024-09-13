@@ -5,6 +5,11 @@ import HeaderComponent from '@/components/header';
 import MenuComponent from '@/components/menu';
 import PizzasComponent from '@/components/pizza';
 import PromotionComponent from '@/components/promotion';
+import PastaComponent from '@/components/pasta';
+import DishesComponent from '@/components/dishes';
+import DessertComponent from '@/components/dessert';
+import DrinksComponent from '@/components/drinks';
+import SnacksComponent from '@/components/snacks';
 
 export default function Home() {
   const [isMenuClicked, setIsMenuClicked] = useState<boolean>(true);
@@ -17,6 +22,11 @@ export default function Home() {
       <MenuComponent isClicked={isMenuClicked} />
       <PromotionComponent />
       <PizzasComponent />
+      <PastaComponent />
+      <DishesComponent />
+      <DessertComponent />
+      <DrinksComponent />
+      <SnacksComponent />
       <FooterComponent />
     </main>
   );

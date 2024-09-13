@@ -18,7 +18,7 @@ export default function ItemsComponents({ name, size, price, details, image }: D
             </div>
             <div className='w-full flex justify-between items-center text-center bg-white rounded'>
                 <p className='font-bold pl-3'>R$ {price}</p>
-                <p><strong>Tamanho: </strong>{size}</p>
+                {size && <p><strong>Tamanho: </strong>{size}</p>}
                 <button type='button' className='font-bold bg-green-600 py-0 px-3 rounded-l-[4px] rounded-ee-[4px] duration-500 hover:text-amber-600 hover:bg-black'>PEDIR</button>
             </div>
         </section>

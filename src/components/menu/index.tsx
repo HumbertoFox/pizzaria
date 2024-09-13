@@ -31,11 +31,11 @@ export default function MenuComponent({ isClicked }: ClickedMenu) {
         <nav className={navClassName}>
             <Link href={'#promotion'} className={CLASS_LINKS}>PROMOÇÕES</Link>
             <Link href={'#pizzas'} className={CLASS_LINKS}>PIZZAS</Link>
-            <Link href={'/'} className={CLASS_LINKS}>MASSAS</Link>
-            <Link href={'/'} className={CLASS_LINKS}>PRATOS</Link>
-            <Link href={'/'} className={CLASS_LINKS}>SOBREMESAS</Link>
-            <Link href={'/'} className={CLASS_LINKS}>BEBIDAS</Link>
-            <Link href={'/'} className={CLASS_LINKS}>PETISCOS</Link>
+            <Link href={'#pasta'} className={CLASS_LINKS}>MASSAS</Link>
+            <Link href={'#dishes'} className={CLASS_LINKS}>PRATOS</Link>
+            <Link href={'#dessert'} className={CLASS_LINKS}>SOBREMESAS</Link>
+            <Link href={'#drinks'} className={CLASS_LINKS}>BEBIDAS</Link>
+            <Link href={'#snacks'} className={CLASS_LINKS}>PETISCOS</Link>
         </nav>
     );
 };

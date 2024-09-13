@@ -2,15 +2,17 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation, Autoplay } from 'swiper/modules';
 import Image from 'next/image';
-import SlideImage0 from '@/assets/pistoia-4461681_1920.jpg';
-import SlideImage1 from '@/assets/bistro-498504_1920.jpg';
-import SlideImage2 from '@/assets/pizza-744405_1920.jpg';
-import SlideImage3 from '@/assets/pizza-4804750_1920.jpg';
-import SlideImage4 from '@/assets/pizza-499106_1920.jpg';
-import SlideImage5 from '@/assets/pizza-1041104_1920.jpg';
-import SlideImage6 from '@/assets/pizza-4205701_1920.jpg';
-import SlideImage7 from '@/assets/session-2287673_1920.jpg';
-import SlideImage8 from '@/assets/restaurant-1604013_1920.jpg';
+import SlideImage0 from '@/assets/pizzeria/00.jpg';
+import SlideImage1 from '@/assets/pizzeria/01.jpg';
+import SlideImage2 from '@/assets/pizzeria/02.jpg';
+import SlideImage3 from '@/assets/pizzeria/03.jpg';
+import SlideImage4 from '@/assets/pizzeria/04.jpg';
+import SlideImage5 from '@/assets/pizzeria/05.jpg';
+import SlideImage6 from '@/assets/pizzeria/06.jpg';
+import SlideImage7 from '@/assets/pizzeria/07.jpg';
+import SlideImage8 from '@/assets/pizzeria/08.jpg';
+import SlideImage9 from '@/assets/pizzeria/09.jpg';
+import SlideImage10 from '@/assets/pizzeria/10.jpg';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
@@ -32,7 +34,7 @@ export default function PromotionComponent() {
                 <SwiperSlide>
                     <Image src={SlideImage0}
                         className='w-full h-full'
-                        alt='Image Pizzaria'
+                        alt='Image Pizzaria 1'
                         aria-label='Slide'
                         priority
                     />
@@ -41,7 +43,7 @@ export default function PromotionComponent() {
                     <Image
                         src={SlideImage1}
                         className='w-full h-full'
-                        alt='Image Pizzaria'
+                        alt='Image Pizzaria 2'
                         aria-label='Slide'
                         priority
                     />
@@ -50,7 +52,7 @@ export default function PromotionComponent() {
                     <Image
                         src={SlideImage2}
                         className='w-full h-full'
-                        alt='Image Pizzaria'
+                        alt='Image Pizzaria 3'
                         aria-label='Slide'
                         priority
                     />
@@ -59,7 +61,7 @@ export default function PromotionComponent() {
                     <Image
                         src={SlideImage3}
                         className='w-full h-full'
-                        alt='Image Pizzaria'
+                        alt='Image Pizzaria 4'
                         aria-label='Slide'
                         priority
                     />
@@ -68,7 +70,7 @@ export default function PromotionComponent() {
                     <Image
                         src={SlideImage4}
                         className='w-full h-full'
-                        alt='Image Pizzaria'
+                        alt='Image Pizzaria 5'
                         aria-label='Slide'
                         priority
                     />
@@ -77,7 +79,7 @@ export default function PromotionComponent() {
                     <Image
                         src={SlideImage5}
                         className='w-full h-full'
-                        alt='Image Pizzaria'
+                        alt='Image Pizzaria 6'
                         aria-label='Slide'
                         priority
                     />
@@ -86,7 +88,7 @@ export default function PromotionComponent() {
                     <Image
                         src={SlideImage6}
                         className='w-full h-full'
-                        alt='Image Pizzaria'
+                        alt='Image Pizzaria 7'
                         aria-label='Slide'
                         priority
                     />
@@ -95,7 +97,7 @@ export default function PromotionComponent() {
                     <Image
                         src={SlideImage7}
                         className='w-full h-full'
-                        alt='Image Pizzaria'
+                        alt='Image Pizzaria 8'
                         aria-label='Slide'
                         priority
                     />
@@ -104,7 +106,25 @@ export default function PromotionComponent() {
                     <Image
                         src={SlideImage8}
                         className='w-full h-full'
-                        alt='Image Pizzaria'
+                        alt='Image Pizzaria 9'
+                        aria-label='Slide'
+                        priority
+                    />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <Image
+                        src={SlideImage9}
+                        className='w-full h-full'
+                        alt='Image Pizzaria 10'
+                        aria-label='Slide'
+                        priority
+                    />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <Image
+                        src={SlideImage10}
+                        className='w-full h-full'
+                        alt='Image Pizzaria 11'
                         aria-label='Slide'
                         priority
                     />
