@@ -8,10 +8,14 @@ export interface ClickedMenu {
     isClicked: boolean;
 };
 
-export interface DetailsPizza {
+export interface DetailsItem {
     name: string;
     size: string;
     price: number;
     details: string;
     image: StaticImageData;
+};
+
+export interface ShoppingCartItems {
+    detailsorder : DetailsItem[];
 };

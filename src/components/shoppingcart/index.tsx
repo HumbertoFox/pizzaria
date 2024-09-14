@@ -4,23 +4,12 @@ import Image from 'next/image';
 import { ShoppingCartItems } from '@/interfaces/interfaces';
 import { Edit, Minus, Plus, Trash2 } from 'react-feather';
 
-const CLASS_SECTION = 'w-full flex flex-col items-center animate-[detailsmsgDown_.7s_ease-in-out]';
 const CLASS_DIV_BUTTONS = 'flex gap-16 py-10';
 const CLASS_BUTTONS = 'font-sans text-sm font-bold bg-amber-500 px-2.5 py-1.5 rounded hover:bg-green-600 duration-700 hover:text-white';
 
 export default function ShoppingCartComponents({ detailsorder }: ShoppingCartItems) {
-    if (!detailsorder || detailsorder.length === 0) {
-        return (
-            <section className={CLASS_SECTION}>
-                <h1 className='font-bold text-2xl pt-10'>Meu Carrinho</h1>
-                <p className='text-center py-10 font-sans font-bold'>Seu carrinho está vazio</p>
-                <Link href='/' title='Continuar Comprando' className={CLASS_BUTTONS}>Continuar Comprando</Link>
-            </section>
-        );
-    };
-
     return (
-        <section className={CLASS_SECTION}>
+        <section className='w-full flex flex-col items-center animate-[detailsmsgDown_.7s_ease-in-out]'>
             <h1 className='font-bold text-2xl pt-10'>Meu Carrinho</h1>
             <div className={CLASS_DIV_BUTTONS}>
                 <Link href={'/'} title='Continuar Comprando' className={CLASS_BUTTONS}>Continuar Comprando</Link>
