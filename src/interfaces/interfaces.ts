@@ -18,9 +18,9 @@ export interface DetailsPizza {
 
 export interface ShoppingCartItems {
     detailsorder: {
-        produto: string;
+        produto?: string;
         obs?: string;
-        quantidade: number;
-        valor: number;
+        quantidade?: number;
+        valor?: number;
     }[];
 };
