@@ -1,4 +1,5 @@
 'use client';
+import { OrderComponentProps } from '@/interfaces/interfaces';
 import SlideImage0 from '@/assets/pasta/00.jpg';
 import SlideImage1 from '@/assets/pasta/01.jpg';
 import SlideImage2 from '@/assets/pasta/02.jpg';
@@ -7,7 +8,7 @@ import SlideImage4 from '@/assets/pasta/04.jpg';
 import SlideImage5 from '@/assets/pasta/05.jpg';
 import ItemsComponents from '../items';
 
-export default function PastaComponent() {
+export default function PastaComponent({ onAddToCart }: OrderComponentProps) {
 
     return (
         <div className='w-full min-h-screen flex flex-col items-center xl:max-h-full px-3 pb-9' id='pasta'>
@@ -19,6 +20,7 @@ export default function PastaComponent() {
                     price={35.50}
                     details='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
                     image={SlideImage0}
+                    onAddToCart={onAddToCart}
                 />
                 <ItemsComponents
                     name='Massa 2'
@@ -26,6 +28,7 @@ export default function PastaComponent() {
                     price={45.00}
                     details='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
                     image={SlideImage1}
+                    onAddToCart={onAddToCart}
                 />
                 <ItemsComponents
                     name='Massa 3'
@@ -33,6 +36,7 @@ export default function PastaComponent() {
                     price={55.50}
                     details='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
                     image={SlideImage2}
+                    onAddToCart={onAddToCart}
                 />
                 <ItemsComponents
                     name='Massa 4'
@@ -40,6 +44,7 @@ export default function PastaComponent() {
                     price={75.00}
                     details='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
                     image={SlideImage3}
+                    onAddToCart={onAddToCart}
                 />
                 <ItemsComponents
                     name='Massa 5'
@@ -47,6 +52,7 @@ export default function PastaComponent() {
                     price={65.00}
                     details='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
                     image={SlideImage4}
+                    onAddToCart={onAddToCart}
                 />
                 <ItemsComponents
                     name='Massa 6'
@@ -54,6 +60,7 @@ export default function PastaComponent() {
                     price={85.00}
                     details='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
                     image={SlideImage5}
+                    onAddToCart={onAddToCart}
                 />
             </div>
         </div>

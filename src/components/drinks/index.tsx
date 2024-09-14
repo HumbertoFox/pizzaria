@@ -1,4 +1,5 @@
 'use client';
+import { OrderComponentProps } from '@/interfaces/interfaces';
 import SlideImage0 from '@/assets/drinks/00.jpg';
 import SlideImage1 from '@/assets/drinks/01.jpg';
 import SlideImage2 from '@/assets/drinks/02.jpg';
@@ -7,7 +8,7 @@ import SlideImage4 from '@/assets/drinks/04.jpg';
 import SlideImage5 from '@/assets/drinks/05.jpg';
 import ItemsComponents from '../items';
 
-export default function DrinksComponent() {
+export default function DrinksComponent({ onAddToCart }: OrderComponentProps) {
 
     return (
         <div className='w-full min-h-screen flex flex-col items-center xl:max-h-full px-3 pb-9' id='drinks'>
@@ -19,6 +20,7 @@ export default function DrinksComponent() {
                     price={25.50}
                     details='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
                     image={SlideImage0}
+                    onAddToCart={onAddToCart}
                 />
                 <ItemsComponents
                     name='Bebida 2'
@@ -26,6 +28,7 @@ export default function DrinksComponent() {
                     price={26.00}
                     details='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
                     image={SlideImage1}
+                    onAddToCart={onAddToCart}
                 />
                 <ItemsComponents
                     name='Bebida 3'
@@ -33,6 +36,7 @@ export default function DrinksComponent() {
                     price={21.50}
                     details='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
                     image={SlideImage2}
+                    onAddToCart={onAddToCart}
                 />
                 <ItemsComponents
                     name='Bebida 4'
@@ -40,6 +44,7 @@ export default function DrinksComponent() {
                     price={20.00}
                     details='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
                     image={SlideImage3}
+                    onAddToCart={onAddToCart}
                 />
                 <ItemsComponents
                     name='Bebida 5'
@@ -47,6 +52,7 @@ export default function DrinksComponent() {
                     price={23.00}
                     details='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
                     image={SlideImage4}
+                    onAddToCart={onAddToCart}
                 />
                 <ItemsComponents
                     name='Bebida 6'
@@ -54,6 +60,7 @@ export default function DrinksComponent() {
                     price={22.00}
                     details='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
                     image={SlideImage5}
+                    onAddToCart={onAddToCart}
                 />
             </div>
         </div>

@@ -1,19 +1,25 @@
 'use client';
 import { useState } from 'react';
-import { HandleClicked } from '@/interfaces/interfaces';
+import { HandleClickedProps } from '@/interfaces/interfaces';
 import { Menu, ShoppingCart, X } from 'react-feather';
 import Image from 'next/image';
 import Link from 'next/link';
 import LogoPizzaria from '@/assets/logo-pizza-fast-food.png';
 
-export default function HeaderComponent({ onClicked }: HandleClicked) {
-
+export default function HeaderComponent({ onClicked, onClickedShopping }: HandleClickedProps) {
     const [isClickedMenu, setIsClickedMenu] = useState<boolean>(true);
+    const [isClickedShopping, setIsClickedShopping] = useState<boolean>(false);
 
     const handleMenuClick = () => {
         const newState = !isClickedMenu;
         setIsClickedMenu(newState);
         onClicked(newState);
+    };
+
+    const handleShoppingClick = () => {
+        const newState = !isClickedShopping;
+        setIsClickedShopping(newState);
+        onClickedShopping(newState);
     };
 
     return (
@@ -38,10 +44,10 @@ export default function HeaderComponent({ onClicked }: HandleClicked) {
                     </Link>
                     <div className='flex flex-col text-nowrap' >
                         <p className='text-sm sm:text-xs'>FINALISE SEU PEDIDO</p>
-                        <Link href={'/shoppingcart'} title='Verificar Carrinho' className='flex items-center gap-1.5'>
+                        <button type='button' title='Verificar Carrinho' className='flex items-center gap-1.5' onClick={handleShoppingClick}>
                             <ShoppingCart className='w-[20px]' />
                             <span className='text-sm font-sans font-bold'>R$</span>
-                        </Link>
+                        </button>
                     </div>
                 </div>
                 <Image src={LogoPizzaria} className='w-[90px] duration-500 hidden sm:block animate-[detailsmsgDown_.7s_ease-in-out]' alt='Logo Pizzaria' priority />

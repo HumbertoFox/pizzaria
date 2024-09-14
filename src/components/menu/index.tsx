@@ -1,11 +1,11 @@
 'use client';
-import { ClickedMenu } from '@/interfaces/interfaces';
-import Link from 'next/link';
+import { ClickedMenuProps } from '@/interfaces/interfaces';
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
 
 const CLASS_LINKS = 'px-2.5 py-1.5 hover:bg-green-600 duration-700 hover:text-white';
 
-export default function MenuComponent({ isClicked }: ClickedMenu) {
+export default function MenuComponent({ isClicked }: ClickedMenuProps) {
     const [isVisible, setIsVisible] = useState(isClicked);
     const [isWideScreen, setIsWideScreen] = useState<boolean>(true);
 

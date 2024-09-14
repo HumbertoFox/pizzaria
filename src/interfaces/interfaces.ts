@@ -1,14 +1,15 @@
 import { StaticImageData } from "next/image";
 
-export interface HandleClicked {
+export interface HandleClickedProps {
     onClicked: (isClicked: boolean) => void;
+    onClickedShopping: (isClicked: boolean) => void;
 };
 
-export interface ClickedMenu {
+export interface ClickedMenuProps {
     isClicked: boolean;
 };
 
-export interface DetailsItem {
+export interface DetailsItemProps {
     name: string;
     size: string;
     price: number;
@@ -16,6 +17,14 @@ export interface DetailsItem {
     image: StaticImageData;
 };
 
-export interface ShoppingCartItems {
-    detailsorder : DetailsItem[];
+export interface ItemsComponentsProps extends DetailsItemProps {
+    onAddToCart: (item: DetailsItemProps) => void;
+};
+
+export interface ShoppingCartItemsProps {
+    detailsorder: DetailsItemProps[];
+};
+
+export interface OrderComponentProps {
+    onAddToCart: (item: DetailsItemProps) => void;
 };
