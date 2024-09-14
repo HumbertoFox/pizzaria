@@ -36,13 +36,13 @@ export default function HeaderComponent({ onClicked }: HandleClicked) {
                         <p className='text-sm sm:text-xs'>CONHEÇA NOSSO</p>
                         <h4 className='text-sm'>ESPAÇO</h4>
                     </Link>
-                    <Link href={'/'} className='flex flex-col text-nowrap'>
+                    <div className='flex flex-col text-nowrap' >
                         <p className='text-sm sm:text-xs'>FINALISE SEU PEDIDO</p>
-                        <div className='flex items-center gap-1.5'>
+                        <Link href={'/shoppingcart'} title='Verificar Carrinho' className='flex items-center gap-1.5'>
                             <ShoppingCart className='w-[20px]' />
                             <span className='text-sm font-sans font-bold'>R$</span>
-                        </div>
-                    </Link>
+                        </Link>
+                    </div>
                 </div>
                 <Image src={LogoPizzaria} className='w-[90px] duration-500 hidden sm:block animate-[detailsmsgDown_.7s_ease-in-out]' alt='Logo Pizzaria' priority />
             </div>

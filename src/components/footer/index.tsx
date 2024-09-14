@@ -5,8 +5,8 @@ const ClassLinksContacts = 'flex items-center gap-2 p-1';
 
 export default function FooterComponent() {
     return (
-        <footer className='w-full flex flex-col items-center gap-3 p-2 xl:text-sm sm:items-center sm:flex-col-reverse'>
-            <address className='md:text-xs'>
+        <footer className='w-full flex flex-col items-center gap-3 bg-amber-600 p-2 xl:text-sm sm:items-center sm:flex-col-reverse'>
+            <address className='md:text-xs cursor-default'>
                 <Map />
                 <p>Endereço:</p>
                 <p>PE-022, 344-Box-B, Nossa senhora da Conceição, Paulista-PE.</p>
@@ -15,7 +15,7 @@ export default function FooterComponent() {
             </address>
             <div className='w-full flex justify-between'>
                 <div className='md:text-xs'>
-                    <h2 className='text-center'>Contato</h2>
+                    <h2 className='text-center cursor-default'>Contato</h2>
                     <Link href={'/'} className={ClassLinksContacts}>
                         <PhoneCall />
                         <p>(81) 3012-3456</p>
@@ -30,7 +30,7 @@ export default function FooterComponent() {
                     </Link>
                 </div>
                 <div className='flex flex-col justify-center gap-3 items-center md:text-xs'>
-                    <h2>Redes Sociais</h2>
+                    <h2 className='cursor-default'>Redes Sociais</h2>
                     <div className='flex gap-4'>
                         <Link href={'/'}>
                             <Instagram />

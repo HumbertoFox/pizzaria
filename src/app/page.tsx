@@ -13,11 +13,13 @@ import SnacksComponent from '@/components/snacks';
 
 export default function Home() {
   const [isMenuClicked, setIsMenuClicked] = useState<boolean>(true);
+
   const handleClicked = (clicked: boolean) => {
     setIsMenuClicked(clicked)
   };
+
   return (
-    <main className='max-w-[1440px] mx-auto lg:w-full min-h-screen sm:min-w-[375px] '>
+    <main className='w-[1440px] mx-auto lg:w-full min-h-screen sm:min-w-[375px] '>
       <HeaderComponent onClicked={handleClicked} />
       <MenuComponent isClicked={isMenuClicked} />
       <PromotionComponent />
