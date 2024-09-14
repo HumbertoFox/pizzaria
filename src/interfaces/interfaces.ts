@@ -22,5 +22,5 @@ export interface ShoppingCartItems {
         obs: string;
         quantidade: number;
         valor: number;
-    }[] | undefined;
+    }[] | null;
 };
