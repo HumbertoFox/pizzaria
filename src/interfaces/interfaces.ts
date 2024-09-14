@@ -15,3 +15,12 @@ export interface DetailsPizza {
     details: string;
     image: StaticImageData;
 };
+
+export interface ShoppingCartItems {
+    detailsorder: {
+        produto: string;
+        obs?: string;
+        quantidade: number;
+        valor: number;
+    }[];
+};
