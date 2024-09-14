@@ -26,7 +26,7 @@ export default function ShoppingCartPage({ detailsorder }: ShoppingCart) {
                     </tr>
                 </thead>
                 <tbody>
-                    {detailsorder && detailsorder.map((details, index) => (
+                    {detailsorder?.map((details, index) => (
                         <tr key={index}>
                             <td>{index + 1}</td>
                             <td>{details.produto}</td>

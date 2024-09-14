@@ -16,11 +16,13 @@ export interface DetailsPizza {
     image: StaticImageData;
 };
 
+export interface ShoppingCartItem {
+    produto: string;
+    obs: string;
+    quantidade: number;
+    valor: number;
+};
+
 export interface ShoppingCart {
-    detailsorder: {
-        produto: string;
-        obs: string;
-        quantidade: number;
-        valor: number;
-    }[];
+    detailsorder: ShoppingCartItem[];
 };
