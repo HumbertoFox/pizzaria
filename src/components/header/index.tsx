@@ -6,7 +6,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import LogoPizzaria from '@/assets/logo-pizza-fast-food.png';
 
-export default function HeaderComponent({ onClicked, onClickedShopping }: HandleClickedProps) {
+export default function HeaderComponent({ onClicked, onClickedShopping, totalAmount }: HandleClickedProps) {
     const [isClickedMenu, setIsClickedMenu] = useState<boolean>(true);
     const [isClickedShopping, setIsClickedShopping] = useState<boolean>(false);
 
@@ -27,9 +27,9 @@ export default function HeaderComponent({ onClicked, onClickedShopping }: Handle
             <Image src={LogoPizzaria} className='w-[90px] duration-500 sm:hidden animate-[detailsmsgDown_.7s_ease-in-out]' alt='Logo Pizzaria' priority />
             <div className='hidden sm:flex items-center relative cursor-pointer duration-500'>
                 {isClickedMenu ? (
-                    <Menu className='left-3 absolute duration-500' onClick={handleMenuClick} />
+                    <Menu className='left-3 absolute duration-500' aria-label='Open Menu' onClick={handleMenuClick} />
                 ) : (
-                    <X className='left-3 absolute duration-500' onClick={handleMenuClick} />
+                    <X className='left-3 absolute duration-500' aria-label='Close Menu' onClick={handleMenuClick} />
                 )}
             </div>
             <div className='w-full flex items-center justify-end gap-2.5 font-bold'>
@@ -46,11 +46,11 @@ export default function HeaderComponent({ onClicked, onClickedShopping }: Handle
                         <p className='text-sm sm:text-xs'>FINALISE SEU PEDIDO</p>
                         <button type='button' title='Verificar Carrinho' className='flex items-center gap-1.5' onClick={handleShoppingClick}>
                             <ShoppingCart className='w-[20px]' />
-                            <span className='text-sm font-sans font-bold'>R$</span>
+                            <span className='text-sm font-sans font-bold'>R$ {totalAmount.toFixed(2)}</span>
                         </button>
                     </div>
                 </div>
-                <Image src={LogoPizzaria} className='w-[90px] duration-500 hidden sm:block animate-[detailsmsgDown_.7s_ease-in-out]' alt='Logo Pizzaria' priority />
+                <Image src={LogoPizzaria} className='w-[90px] duration-500 hidden sm:block animate-[detailsmsgDown_.7s_ease-in-out]' alt='Logo Pizzaria' />
             </div>
         </header>
     );

@@ -3,6 +3,7 @@ import { StaticImageData } from "next/image";
 export interface HandleClickedProps {
     onClicked: (isClicked: boolean) => void;
     onClickedShopping: (isClicked: boolean) => void;
+    totalAmount: number;
 };
 
 export interface ClickedMenuProps {
@@ -23,6 +24,8 @@ export interface ItemsComponentsProps extends DetailsItemProps {
 
 export interface ShoppingCartItemsProps {
     detailsorder: DetailsItemProps[];
+    onUpdateTotal: (total: number) => void;
+    onClickedShopping: (isClicked: boolean) => void;
 };
 
 export interface OrderComponentProps {
