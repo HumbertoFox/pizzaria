@@ -8,7 +8,7 @@ const CLASS_SECTION = 'absolute top-[130px] z-50 backdrop-blur-xl bg-white/70 w-
 const CLASS_DIV_BUTTONS = 'flex gap-16 py-10';
 const CLASS_BUTTONS = 'font-sans text-sm font-bold bg-amber-500 px-2.5 py-1.5 rounded hover:bg-green-600 duration-700 hover:text-white';
 
-export default function ShoppingCartComponents({ detailsorder, onClickedShopping, onUpdateTotal }: ShoppingCartItemsProps) {
+export default function ShoppingCartComponents({ detailsorder, onClickedShopping, onUpdateTotal, onRemoveItem }: ShoppingCartItemsProps) {
     const [totalAmount, setTotalAmount] = useState(0);
 
     useEffect(() => {
@@ -23,6 +23,12 @@ export default function ShoppingCartComponents({ detailsorder, onClickedShopping
 
     const handleShoppingClick = () => {
         onClickedShopping(false);
+    };
+
+    const handleRemoveItem = (index: number) => {
+        if (onRemoveItem) {
+            onRemoveItem(index);
+        };
     };
 
     if (!detailsorder || detailsorder.length === 0) {
@@ -95,7 +101,8 @@ export default function ShoppingCartComponents({ detailsorder, onClickedShopping
                                     type='button'
                                     title={`Excluir ${details.name}`}
                                     aria-label={`Excluir ${details.name}`}
-                                    className='mx-auto'>
+                                    className='mx-auto'
+                                    onClick={() => handleRemoveItem(index)}>
                                     <Trash2 />
                                 </button>
                             </td>

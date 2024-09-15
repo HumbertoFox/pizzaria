@@ -48,5 +48,225 @@
             "image": "/src/assets/dessert/05.jpg",
             "onAddToCart": "onAddToCart"
         }
+    ],
+    "dishes": [
+        {
+            "name": "Prato 1",
+            "size": "1 Pessoa",
+            "price": 45.50,
+            "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "image": "SlideImage0"
+        },
+        {
+            "name": "Prato 2",
+            "size": "1 Pessoa",
+            "price": 55.00,
+            "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "image": "SlideImage1"
+        },
+        {
+            "name": "Prato 3",
+            "size": "1 Pessoa",
+            "price": 55.50,
+            "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "image": "SlideImage2"
+        },
+        {
+            "name": "Prato 4",
+            "size": "2 Pessoa",
+            "price": 75.00,
+            "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "image": "SlideImage3"
+        },
+        {
+            "name": "Prato 5",
+            "size": "2 Pessoa",
+            "price": 35.00,
+            "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "image": "SlideImage4"
+        },
+        {
+            "name": "Prato 6",
+            "size": "2 Pessoa",
+            "price": 85.00,
+            "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "image": "SlideImage5"
+        }
+    ],
+    "drinks": [
+        {
+            "name": "Bebida 1",
+            "size": "",
+            "price": 25.50,
+            "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "image": "SlideImage0"
+        },
+        {
+            "name": "Bebida 2",
+            "size": "",
+            "price": 26.00,
+            "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "image": "SlideImage1"
+        },
+        {
+            "name": "Bebida 3",
+            "size": "",
+            "price": 21.50,
+            "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "image": "SlideImage2"
+        },
+        {
+            "name": "Bebida 4",
+            "size": "",
+            "price": 20.00,
+            "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "image": "SlideImage3"
+        },
+        {
+            "name": "Bebida 5",
+            "size": "",
+            "price": 23.00,
+            "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "image": "SlideImage4"
+        },
+        {
+            "name": "Bebida 6",
+            "size": "",
+            "price": 22.00,
+            "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "image": "SlideImage5"
+        }
+    ],
+    "pastas": [
+        {
+            "name": "Massa 1",
+            "size": "1 Pessoa",
+            "price": 35.50,
+            "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "image": "SlideImage0"
+        },
+        {
+            "name": "Massa 2",
+            "size": "1 Pessoa",
+            "price": 45.00,
+            "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "image": "SlideImage1"
+        },
+        {
+            "name": "Massa 3",
+            "size": "1 Pessoa",
+            "price": 55.50,
+            "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "image": "SlideImage2"
+        },
+        {
+            "name": "Massa 4",
+            "size": "2 Pessoas",
+            "price": 75.00,
+            "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "image": "SlideImage3"
+        },
+        {
+            "name": "Massa 5",
+            "size": "2 Pessoas",
+            "price": 65.00,
+            "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "image": "SlideImage4"
+        },
+        {
+            "name": "Massa 6",
+            "size": "2 Pessoas",
+            "price": 85.00,
+            "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "image": "SlideImage5"
+        }
+    ],
+    "pizzas": [
+        {
+            "name": "Pizza 1",
+            "size": "Grande",
+            "price": 45.50,
+            "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "image": "SlideImage0"
+        },
+        {
+            "name": "Pizza 2",
+            "size": "Grande",
+            "price": 65.00,
+            "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "image": "SlideImage1"
+        },
+        {
+            "name": "Pizza 3",
+            "size": "Grande",
+            "price": 55.50,
+            "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "image": "SlideImage2"
+        },
+        {
+            "name": "Pizza 4",
+            "size": "Media",
+            "price": 65.00,
+            "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "image": "SlideImage3"
+        },
+        {
+            "name": "Pizza 5",
+            "size": "Media",
+            "price": 65.00,
+            "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "image": "SlideImage4"
+        },
+        {
+            "name": "Pizza 6",
+            "size": "Media",
+            "price": 65.00,
+            "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "image": "SlideImage5"
+        }
+    ],
+    "snacks": [
+        {
+            "name": "Petisco 1",
+            "size": "",
+            "price": 35.50,
+            "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "image": "SlideImage0"
+        },
+        {
+            "name": "Petisco 2",
+            "size": "",
+            "price": 25.00,
+            "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "image": "SlideImage1"
+        },
+        {
+            "name": "Petisco 3",
+            "size": "",
+            "price": 45.50,
+            "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "image": "SlideImage2"
+        },
+        {
+            "name": "Petisco 4",
+            "size": "",
+            "price": 25.00,
+            "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "image": "SlideImage3"
+        },
+        {
+            "name": "Petisco 5",
+            "size": "",
+            "price": 21.00,
+            "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "image": "SlideImage4"
+        },
+        {
+            "name": "Petisco 6",
+            "size": "",
+            "price": 35.00,
+            "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "image": "SlideImage5"
+        }
     ]
 }

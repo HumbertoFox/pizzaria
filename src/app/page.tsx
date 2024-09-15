@@ -31,9 +31,12 @@ export default function Home() {
     setCartItems(prevItems => [...prevItems, item]);
   };
 
-
   const calculateTotalAmount = () => {
     return cartItems.reduce((total, item) => total + item.price, 0);
+  };
+
+  const handleRemoveItem = (index: number) => {
+    setCartItems(prevItems => prevItems.filter((_, i) => i !== index));
   };
 
   useEffect(() => {
@@ -55,7 +58,9 @@ export default function Home() {
       {isShoppingCartClicked && (
         <ShoppingCartComponents detailsorder={cartItems}
           onClickedShopping={handleClickedShopping}
-          onUpdateTotal={setTotalAmount} />
+          onUpdateTotal={setTotalAmount}
+          onRemoveItem={handleRemoveItem}
+        />
       )}
     </main>
   );

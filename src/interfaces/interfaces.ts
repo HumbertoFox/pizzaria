@@ -26,6 +26,7 @@ export interface ShoppingCartItemsProps {
     detailsorder: DetailsItemProps[];
     onUpdateTotal: (total: number) => void;
     onClickedShopping: (isClicked: boolean) => void;
+    onRemoveItem: (index: number) => void;
 };
 
 export interface OrderComponentProps {
