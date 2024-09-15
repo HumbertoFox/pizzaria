@@ -1,0 +1,52 @@
+{
+    "desserts": [
+        {
+            "name": "Sobremesa 1",
+            "size": "",
+            "price": 35.50,
+            "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "image": "/src/assets/dessert/00.jpg",
+            "onAddToCart": "onAddToCart"
+        },
+        {
+            "name": "Sobremesa 2",
+            "size": "",
+            "price": 25.00,
+            "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "image": "/src/assets/dessert/01.jpg",
+            "onAddToCart": "onAddToCart"
+        },
+        {
+            "name": "Sobremesa 3",
+            "size": "",
+            "price": 45.50,
+            "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "image": "/src/assets/dessert/02.jpg",
+            "onAddToCart": "onAddToCart"
+        },
+        {
+            "name": "Sobremesa 4",
+            "size": "",
+            "price": 25.00,
+            "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "image": "/src/assets/dessert/03.jpg",
+            "onAddToCart": "onAddToCart"
+        },
+        {
+            "name": "Sobremesa 5",
+            "size": "",
+            "price": 21.00,
+            "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "image": "/src/assets/dessert/04.jpg",
+            "onAddToCart": "onAddToCart"
+        },
+        {
+            "name": "Sobremesa 6",
+            "size": "",
+            "price": 35.00,
+            "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "image": "/src/assets/dessert/05.jpg",
+            "onAddToCart": "onAddToCart"
+        }
+    ]
+}
