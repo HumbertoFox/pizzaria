@@ -45,7 +45,7 @@ export default function HeaderComponent({ onClicked, onClickedShopping, totalAmo
                     </Link>
                     <div className='flex flex-col text-nowrap' >
                         <p className='text-sm sm:text-xs'>FINALISE SEU PEDIDO</p>
-                        <button type='button' title='Verificar Carrinho' className='flex items-center gap-1.5 hover:text-white duration-500' onClick={handleShoppingClick}>
+                        <button type='button' title={isClickedShopping ? 'Voltar as Compras' : 'Verificar Carrinho'} className='flex items-center gap-1.5 hover:text-white duration-500' onClick={handleShoppingClick}>
                             <ShoppingCart className='w-[20px]' />
                             <span className='text-sm font-sans font-bold'>R$ {totalAmount.toFixed(2)}</span>
                         </button>
