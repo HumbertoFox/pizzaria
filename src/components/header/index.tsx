@@ -25,13 +25,14 @@ export default function HeaderComponent({ onClicked, onClickedShopping, totalAmo
     return (
         <header className='flex w-full bg-amber-600 pt-1 px-3'>
             <Image src={LogoPizzaria} className='w-[90px] duration-500 sm:hidden animate-[detailsmsgDown_.7s_ease-in-out]' alt='Logo Pizzaria' priority />
-            <div className='hidden sm:flex items-center relative cursor-pointer duration-500'>
+            {!isClickedShopping && (<div className='hidden sm:flex items-center relative cursor-pointer duration-500'>
                 {isClickedMenu ? (
                     <Menu className='left-3 absolute duration-500' aria-label='Open Menu' onClick={handleMenuClick} />
                 ) : (
                     <X className='left-3 absolute duration-500' aria-label='Close Menu' onClick={handleMenuClick} />
                 )}
             </div>
+            )}
             <div className='w-full flex items-center justify-end gap-2.5 font-bold'>
                 <div className='flex gap-2.5 sm:flex-col'>
                     <Link href={'/'} className='flex flex-col items-center text-nowrap'>
