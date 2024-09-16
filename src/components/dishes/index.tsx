@@ -14,6 +14,7 @@ const dishes = [
         size: '1 Pessoa',
         price: 45.50,
         details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        quantity: 1,
         image: SlideImage0
     },
     {
@@ -21,6 +22,7 @@ const dishes = [
         size: '1 Pessoa',
         price: 55.00,
         details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        quantity: 1,
         image: SlideImage1
     },
     {
@@ -28,6 +30,7 @@ const dishes = [
         size: '1 Pessoa',
         price: 55.50,
         details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        quantity: 1,
         image: SlideImage2
     },
     {
@@ -35,6 +38,7 @@ const dishes = [
         size: '2 Pessoa',
         price: 75.00,
         details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        quantity: 1,
         image: SlideImage3
     },
     {
@@ -42,6 +46,7 @@ const dishes = [
         size: '2 Pessoa',
         price: 35.00,
         details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        quantity: 1,
         image: SlideImage4
     },
     {
@@ -49,6 +54,7 @@ const dishes = [
         size: '2 Pessoa',
         price: 85.00,
         details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        quantity: 1,
         image: SlideImage5
     }
 ];
@@ -67,6 +73,7 @@ export default function DishesComponent({ onAddToCart, isItemInCart }: OrderComp
                         price={dishe.price}
                         details={dishe.details}
                         image={dishe.image}
+                        quantity={dishe.quantity}
                         onAddToCart={onAddToCart}
                         isItemInCart={isItemInCart}
                     />

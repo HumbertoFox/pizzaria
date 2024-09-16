@@ -9,17 +9,22 @@ const CLASS_DIV_BUTTONS = 'flex gap-16 py-10';
 const CLASS_BUTTONS = 'font-sans text-sm font-bold bg-amber-500 px-2.5 py-1.5 rounded hover:bg-green-600 duration-700 hover:text-white';
 
 export default function ShoppingCartComponents({ detailsorder, onClickedShopping, onUpdateTotal, onRemoveItem }: ShoppingCartItemsProps) {
+    const [items, setItems] = useState(detailsorder);
     const [totalAmount, setTotalAmount] = useState(0);
 
     useEffect(() => {
+        setItems(detailsorder);
+    }, [detailsorder]);
+
+    useEffect(() => {
         const calculateTotal = () => {
-            return detailsorder.reduce((total, item) => total + item.price, 0);
+            return items.reduce((total, item) => total + item.price * item.quantity, 0);
         };
 
         const total = calculateTotal();
         setTotalAmount(total);
         onUpdateTotal(total);
-    }, [detailsorder, onUpdateTotal]);
+    }, [items, onUpdateTotal]);
 
     const handleShoppingClick = () => onClickedShopping(false);
 
@@ -27,6 +32,20 @@ export default function ShoppingCartComponents({ detailsorder, onClickedShopping
         if (onRemoveItem) {
             onRemoveItem(index);
         };
+    };
+
+    const handleIncrement = (index: number) => {
+        const newItems = [...items];
+        newItems[index].quantity += 1;
+        setItems(newItems);
+    };
+
+    const handleDecrement = (index: number) => {
+        const newItems = [...items];
+        if (newItems[index].quantity > 1) {
+            newItems[index].quantity -= 1;
+            setItems(newItems);
+        }
     };
 
     if (!detailsorder || detailsorder.length === 0) {
@@ -82,18 +101,20 @@ export default function ShoppingCartComponents({ detailsorder, onClickedShopping
                                 <button
                                     type='button'
                                     title='Decrementar quantidade'
-                                    aria-label='Decrementar quantidade'>
+                                    aria-label='Decrementar quantidade'
+                                    onClick={() => handleDecrement(index)}>
                                     <Minus />
                                 </button>
-                                <span className='px-3 cursor-default'>{1}</span>
+                                <span className='px-3 cursor-default'>{details.quantity}</span>
                                 <button
                                     type='button'
                                     title='Incrementar quantidade'
-                                    aria-label='Incrementar quantidade'>
+                                    aria-label='Incrementar quantidade'
+                                    onClick={() => handleIncrement(index)}>
                                     <Plus />
                                 </button>
                             </td>
-                            <td className='w-[20%] flex justify-center'><span>R$ </span>{details.price.toFixed(2)}</td>
+                            <td className='w-[20%] flex justify-center'><span>R$ </span>{(details.price * details.quantity).toFixed(2)}</td>
                             <td className='w-[9%] flex'>
                                 <button
                                     type='button'

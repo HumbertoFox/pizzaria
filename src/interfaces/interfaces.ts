@@ -15,6 +15,7 @@ export interface DetailsItemProps {
     size: string;
     price: number;
     details: string;
+    quantity: number;
     image: StaticImageData;
 };
 

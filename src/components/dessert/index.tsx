@@ -14,6 +14,7 @@ const desserts = [
         size: '',
         price: 35.50,
         details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        quantity: 1,
         image: SlideImage0
     },
     {
@@ -21,6 +22,7 @@ const desserts = [
         size: '',
         price: 25.00,
         details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        quantity: 1,
         image: SlideImage1
     },
     {
@@ -28,6 +30,7 @@ const desserts = [
         size: '',
         price: 45.50,
         details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        quantity: 1,
         image: SlideImage2
     },
     {
@@ -35,6 +38,7 @@ const desserts = [
         size: '',
         price: 25.00,
         details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        quantity: 1,
         image: SlideImage3
     },
     {
@@ -42,6 +46,7 @@ const desserts = [
         size: '',
         price: 21.00,
         details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        quantity: 1,
         image: SlideImage4
     },
     {
@@ -49,6 +54,7 @@ const desserts = [
         size: '',
         price: 35.00,
         details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        quantity: 1,
         image: SlideImage5
     }
 ];
@@ -66,6 +72,7 @@ export default function DessertComponent({ onAddToCart, isItemInCart }: OrderCom
                         size={dessert.size}
                         price={dessert.price}
                         details={dessert.details}
+                        quantity={dessert.quantity}
                         image={dessert.image}
                         onAddToCart={onAddToCart}
                         isItemInCart={isItemInCart}

@@ -3,16 +3,16 @@ import { useState } from "react";
 import { ItemsComponentsProps } from "@/interfaces/interfaces";
 import Image from "next/image";
 
-export default function ItemsComponents({ name, size, price, details, image, onAddToCart, isItemInCart }: ItemsComponentsProps) {
+export default function ItemsComponents({ name, size, price, details, quantity, image, onAddToCart, isItemInCart }: ItemsComponentsProps) {
     const [isClickedDetails, setIsClieckedDetails] = useState<boolean>(false);
 
-    const itemInCart = isItemInCart({ name, size, price, details, image });
+    const itemInCart = isItemInCart({ name, size, price, details, quantity, image });
 
     const handleDetailClick = () => setIsClieckedDetails(!isClickedDetails);
 
     const handleAddToCart = () => {
         if (onAddToCart) {
-            onAddToCart({ name, size, price, details, image });
+            onAddToCart({ name, size, price, details, quantity, image });
         };
     };
 

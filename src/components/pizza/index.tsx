@@ -14,6 +14,7 @@ const pizzas = [
         size: 'Grande',
         price: 45.50,
         details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        quantity: 1,
         image: SlideImage0
     },
     {
@@ -21,6 +22,7 @@ const pizzas = [
         size: 'Grande',
         price: 65.00,
         details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        quantity: 1,
         image: SlideImage1
     },
     {
@@ -28,6 +30,7 @@ const pizzas = [
         size: 'Grande',
         price: 55.50,
         details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        quantity: 1,
         image: SlideImage2
     },
     {
@@ -35,6 +38,7 @@ const pizzas = [
         size: 'Media',
         price: 65.00,
         details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        quantity: 1,
         image: SlideImage3
     },
     {
@@ -42,6 +46,7 @@ const pizzas = [
         size: 'Media',
         price: 65.00,
         details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        quantity: 1,
         image: SlideImage4
     },
     {
@@ -49,6 +54,7 @@ const pizzas = [
         size: 'Media',
         price: 65.00,
         details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        quantity: 1,
         image: SlideImage5
     }
 ];
@@ -66,6 +72,7 @@ export default function PizzasComponent({ onAddToCart, isItemInCart }: OrderComp
                         size={pizza.size}
                         price={pizza.price}
                         details={pizza.details}
+                        quantity={pizza.quantity}
                         image={pizza.image}
                         onAddToCart={onAddToCart}
                         isItemInCart={isItemInCart}

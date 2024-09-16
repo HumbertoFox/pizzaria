@@ -5,6 +5,7 @@
             "size": "",
             "price": 35.50,
             "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "quantity": 1,
             "image": "/src/assets/dessert/00.jpg",
             "onAddToCart": "onAddToCart"
         },
@@ -13,6 +14,7 @@
             "size": "",
             "price": 25.00,
             "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "quantity": 1,
             "image": "/src/assets/dessert/01.jpg",
             "onAddToCart": "onAddToCart"
         },
@@ -21,6 +23,7 @@
             "size": "",
             "price": 45.50,
             "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "quantity": 1,
             "image": "/src/assets/dessert/02.jpg",
             "onAddToCart": "onAddToCart"
         },
@@ -29,6 +32,7 @@
             "size": "",
             "price": 25.00,
             "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "quantity": 1,
             "image": "/src/assets/dessert/03.jpg",
             "onAddToCart": "onAddToCart"
         },
@@ -37,6 +41,7 @@
             "size": "",
             "price": 21.00,
             "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "quantity": 1,
             "image": "/src/assets/dessert/04.jpg",
             "onAddToCart": "onAddToCart"
         },
@@ -45,6 +50,7 @@
             "size": "",
             "price": 35.00,
             "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "quantity": 1,
             "image": "/src/assets/dessert/05.jpg",
             "onAddToCart": "onAddToCart"
         }
@@ -55,6 +61,7 @@
             "size": "1 Pessoa",
             "price": 45.50,
             "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "quantity": 1,
             "image": "SlideImage0"
         },
         {
@@ -62,6 +69,7 @@
             "size": "1 Pessoa",
             "price": 55.00,
             "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "quantity": 1,
             "image": "SlideImage1"
         },
         {
@@ -69,6 +77,7 @@
             "size": "1 Pessoa",
             "price": 55.50,
             "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "quantity": 1,
             "image": "SlideImage2"
         },
         {
@@ -76,6 +85,7 @@
             "size": "2 Pessoa",
             "price": 75.00,
             "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "quantity": 1,
             "image": "SlideImage3"
         },
         {
@@ -83,6 +93,7 @@
             "size": "2 Pessoa",
             "price": 35.00,
             "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "quantity": 1,
             "image": "SlideImage4"
         },
         {
@@ -90,6 +101,7 @@
             "size": "2 Pessoa",
             "price": 85.00,
             "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "quantity": 1,
             "image": "SlideImage5"
         }
     ],
@@ -99,6 +111,7 @@
             "size": "",
             "price": 25.50,
             "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "quantity": 1,
             "image": "SlideImage0"
         },
         {
@@ -106,6 +119,7 @@
             "size": "",
             "price": 26.00,
             "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "quantity": 1,
             "image": "SlideImage1"
         },
         {
@@ -113,6 +127,7 @@
             "size": "",
             "price": 21.50,
             "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "quantity": 1,
             "image": "SlideImage2"
         },
         {
@@ -120,6 +135,7 @@
             "size": "",
             "price": 20.00,
             "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "quantity": 1,
             "image": "SlideImage3"
         },
         {
@@ -127,6 +143,7 @@
             "size": "",
             "price": 23.00,
             "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "quantity": 1,
             "image": "SlideImage4"
         },
         {
@@ -134,6 +151,7 @@
             "size": "",
             "price": 22.00,
             "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "quantity": 1,
             "image": "SlideImage5"
         }
     ],
@@ -143,6 +161,7 @@
             "size": "1 Pessoa",
             "price": 35.50,
             "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "quantity": 1,
             "image": "SlideImage0"
         },
         {
@@ -150,6 +169,7 @@
             "size": "1 Pessoa",
             "price": 45.00,
             "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "quantity": 1,
             "image": "SlideImage1"
         },
         {
@@ -157,6 +177,7 @@
             "size": "1 Pessoa",
             "price": 55.50,
             "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "quantity": 1,
             "image": "SlideImage2"
         },
         {
@@ -164,6 +185,7 @@
             "size": "2 Pessoas",
             "price": 75.00,
             "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "quantity": 1,
             "image": "SlideImage3"
         },
         {
@@ -171,6 +193,7 @@
             "size": "2 Pessoas",
             "price": 65.00,
             "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "quantity": 1,
             "image": "SlideImage4"
         },
         {
@@ -178,6 +201,7 @@
             "size": "2 Pessoas",
             "price": 85.00,
             "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "quantity": 1,
             "image": "SlideImage5"
         }
     ],
@@ -187,6 +211,7 @@
             "size": "Grande",
             "price": 45.50,
             "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "quantity": 1,
             "image": "SlideImage0"
         },
         {
@@ -194,6 +219,7 @@
             "size": "Grande",
             "price": 65.00,
             "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "quantity": 1,
             "image": "SlideImage1"
         },
         {
@@ -201,6 +227,7 @@
             "size": "Grande",
             "price": 55.50,
             "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "quantity": 1,
             "image": "SlideImage2"
         },
         {
@@ -208,6 +235,7 @@
             "size": "Media",
             "price": 65.00,
             "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "quantity": 1,
             "image": "SlideImage3"
         },
         {
@@ -215,6 +243,7 @@
             "size": "Media",
             "price": 65.00,
             "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "quantity": 1,
             "image": "SlideImage4"
         },
         {
@@ -222,6 +251,7 @@
             "size": "Media",
             "price": 65.00,
             "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "quantity": 1,
             "image": "SlideImage5"
         }
     ],
@@ -231,6 +261,7 @@
             "size": "",
             "price": 35.50,
             "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "quantity": 1,
             "image": "SlideImage0"
         },
         {
@@ -238,6 +269,7 @@
             "size": "",
             "price": 25.00,
             "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "quantity": 1,
             "image": "SlideImage1"
         },
         {
@@ -245,6 +277,7 @@
             "size": "",
             "price": 45.50,
             "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "quantity": 1,
             "image": "SlideImage2"
         },
         {
@@ -252,6 +285,7 @@
             "size": "",
             "price": 25.00,
             "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "quantity": 1,
             "image": "SlideImage3"
         },
         {
@@ -259,6 +293,7 @@
             "size": "",
             "price": 21.00,
             "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "quantity": 1,
             "image": "SlideImage4"
         },
         {
@@ -266,6 +301,7 @@
             "size": "",
             "price": 35.00,
             "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "quantity": 1,
             "image": "SlideImage5"
         }
     ]
