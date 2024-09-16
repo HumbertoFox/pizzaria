@@ -19,24 +19,20 @@ export default function Home() {
   const [cartItems, setCartItems] = useState<DetailsItemProps[]>([]);
   const [totalAmount, setTotalAmount] = useState<number>(0);
 
-  const handleClicked = (clicked: boolean) => {
-    setIsMenuClicked(clicked)
-  };
+  const handleClicked = (clicked: boolean) => setIsMenuClicked(clicked);
 
-  const handleClickedShopping = (clicked: boolean) => {
-    setIsDhoppingCartClicked(clicked)
-  };
+  const handleClickedShopping = (clicked: boolean) => setIsDhoppingCartClicked(clicked);
 
-  const handleAddToCart = (item: DetailsItemProps) => {
-    setCartItems(prevItems => [...prevItems, item]);
+  const handleAddToCart = (item: DetailsItemProps) => setCartItems(prevItems => [...prevItems, item]);
+
+  const handleRemoveItem = (index: number) => setCartItems(prevItems => prevItems.filter((_, i) => i !== index));
+
+  const isItemInCart = (item: DetailsItemProps) => {
+    return cartItems.some(cartItem => cartItem.name === item.name && cartItem.size === item.size);
   };
 
   const calculateTotalAmount = () => {
     return cartItems.reduce((total, item) => total + item.price, 0);
-  };
-
-  const handleRemoveItem = (index: number) => {
-    setCartItems(prevItems => prevItems.filter((_, i) => i !== index));
   };
 
   useEffect(() => {
@@ -48,12 +44,12 @@ export default function Home() {
       <HeaderComponent onClicked={handleClicked} onClickedShopping={handleClickedShopping} totalAmount={totalAmount} />
       <MenuComponent isClicked={isMenuClicked} />
       <PromotionComponent />
-      <PizzasComponent onAddToCart={handleAddToCart} />
-      <PastaComponent onAddToCart={handleAddToCart} />
-      <DishesComponent onAddToCart={handleAddToCart} />
-      <DessertComponent onAddToCart={handleAddToCart} />
-      <DrinksComponent onAddToCart={handleAddToCart} />
-      <SnacksComponent onAddToCart={handleAddToCart} />
+      <PizzasComponent onAddToCart={handleAddToCart} isItemInCart={isItemInCart} />
+      <PastaComponent onAddToCart={handleAddToCart} isItemInCart={isItemInCart} />
+      <DishesComponent onAddToCart={handleAddToCart} isItemInCart={isItemInCart} />
+      <DessertComponent onAddToCart={handleAddToCart} isItemInCart={isItemInCart} />
+      <DrinksComponent onAddToCart={handleAddToCart} isItemInCart={isItemInCart} />
+      <SnacksComponent onAddToCart={handleAddToCart} isItemInCart={isItemInCart} />
       <FooterComponent />
       {isShoppingCartClicked && (
         <ShoppingCartComponents detailsorder={cartItems}

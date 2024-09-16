@@ -3,11 +3,12 @@ import { useState } from "react";
 import { ItemsComponentsProps } from "@/interfaces/interfaces";
 import Image from "next/image";
 
-export default function ItemsComponents({ name, size, price, details, image, onAddToCart }: ItemsComponentsProps) {
+export default function ItemsComponents({ name, size, price, details, image, onAddToCart, isItemInCart }: ItemsComponentsProps) {
     const [isClickedDetails, setIsClieckedDetails] = useState<boolean>(false);
-    const handleDetailClick = () => {
-        setIsClieckedDetails(!isClickedDetails);
-    };
+
+    const itemInCart = isItemInCart({ name, size, price, details, image });
+
+    const handleDetailClick = () => setIsClieckedDetails(!isClickedDetails);
 
     const handleAddToCart = () => {
         if (onAddToCart) {
@@ -40,8 +41,9 @@ export default function ItemsComponents({ name, size, price, details, image, onA
                     type='button'
                     className='font-bold bg-green-600 py-0 px-3 rounded-l-[4px] rounded-ee-[4px] duration-500 hover:text-amber-600 hover:bg-black'
                     onClick={handleAddToCart}
+                    disabled={itemInCart}
                 >
-                    PEDIR
+                    {itemInCart ? 'Já no Carrinho' : 'PEDIR'}
                 </button>
             </div>
         </section>

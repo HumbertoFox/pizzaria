@@ -53,7 +53,7 @@ const snacks = [
     }
 ];
 
-export default function SnacksComponent({ onAddToCart }: OrderComponentProps) {
+export default function SnacksComponent({ onAddToCart, isItemInCart }: OrderComponentProps) {
 
     return (
         <div className='w-full min-h-screen flex flex-col items-center xl:max-h-full px-3 pb-9' id='snacks'>
@@ -68,6 +68,7 @@ export default function SnacksComponent({ onAddToCart }: OrderComponentProps) {
                         details={snack.details}
                         image={snack.image}
                         onAddToCart={onAddToCart}
+                        isItemInCart={isItemInCart}
                     />
                 ))}
             </div>

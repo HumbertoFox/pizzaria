@@ -21,9 +21,7 @@ export default function ShoppingCartComponents({ detailsorder, onClickedShopping
         onUpdateTotal(total);
     }, [detailsorder, onUpdateTotal]);
 
-    const handleShoppingClick = () => {
-        onClickedShopping(false);
-    };
+    const handleShoppingClick = () => onClickedShopping(false);
 
     const handleRemoveItem = (index: number) => {
         if (onRemoveItem) {

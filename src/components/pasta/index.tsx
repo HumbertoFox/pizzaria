@@ -53,7 +53,7 @@ const pastas = [
     }
 ];
 
-export default function PastaComponent({ onAddToCart }: OrderComponentProps) {
+export default function PastaComponent({ onAddToCart, isItemInCart }: OrderComponentProps) {
 
     return (
         <div className='w-full min-h-screen flex flex-col items-center xl:max-h-full px-3 pb-9' id='pasta'>
@@ -68,6 +68,7 @@ export default function PastaComponent({ onAddToCart }: OrderComponentProps) {
                         details={pasta.details}
                         image={pasta.image}
                         onAddToCart={onAddToCart}
+                        isItemInCart={isItemInCart}
                     />
                 ))}
             </div>

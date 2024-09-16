@@ -20,6 +20,7 @@ export interface DetailsItemProps {
 
 export interface ItemsComponentsProps extends DetailsItemProps {
     onAddToCart: (item: DetailsItemProps) => void;
+    isItemInCart: (item: DetailsItemProps) => boolean;
 };
 
 export interface ShoppingCartItemsProps {
@@ -31,4 +32,5 @@ export interface ShoppingCartItemsProps {
 
 export interface OrderComponentProps {
     onAddToCart: (item: DetailsItemProps) => void;
+    isItemInCart: (item: DetailsItemProps) => boolean;
 };
