@@ -39,7 +39,7 @@ export default function ItemsComponents({ name, size, price, details, quantity, 
                 {size && <p><strong>Tamanho: </strong>{size}</p>}
                 <button
                     type='button'
-                    className='font-bold bg-green-600 py-0 px-3 rounded-l-[4px] rounded-ee-[4px] duration-500 hover:text-amber-600 hover:bg-black'
+                    className='font-bold bg-green-600 py-0 px-3 rounded-ee-[4px] duration-500 hover:text-amber-600 hover:bg-black'
                     onClick={handleAddToCart}
                     disabled={itemInCart}
                 >
