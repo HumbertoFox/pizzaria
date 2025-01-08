@@ -1,9 +1,19 @@
 'use client';
-import { useState } from "react";
-import { ItemsComponentsProps } from "@/interfaces/interfaces";
-import Image from "next/image";
 
-export default function ItemsComponents({ name, size, price, details, quantity, image, onAddToCart, isItemInCart }: ItemsComponentsProps) {
+import { useState } from 'react';
+import { ItemsComponentsProps } from '@/interfaces/interfaces';
+import Image from 'next/image';
+
+export default function ItemsComponents({
+    name,
+    size,
+    price,
+    details,
+    quantity,
+    image,
+    onAddToCart,
+    isItemInCart
+}: ItemsComponentsProps) {
     const [isClickedDetails, setIsClieckedDetails] = useState<boolean>(false);
 
     const itemInCart = isItemInCart({ name, size, price, details, quantity, image });
@@ -15,7 +25,6 @@ export default function ItemsComponents({ name, size, price, details, quantity, 
             onAddToCart({ name, size, price, details, quantity, image });
         };
     };
-
     return (
         <section className='w-auto h-auto flex flex-col justify-center items-center'>
             <h3
@@ -48,4 +57,4 @@ export default function ItemsComponents({ name, size, price, details, quantity, 
             </div>
         </section>
     );
-};
+}

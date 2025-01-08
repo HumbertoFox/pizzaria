@@ -1,12 +1,11 @@
-'use client';
 import { OrderComponentProps } from '@/interfaces/interfaces';
-import SlideImage0 from '@/assets/snacks/00.jpg';
-import SlideImage1 from '@/assets/snacks/01.jpg';
-import SlideImage2 from '@/assets/snacks/02.jpg';
-import SlideImage3 from '@/assets/snacks/03.jpg';
-import SlideImage4 from '@/assets/snacks/04.jpg';
-import SlideImage5 from '@/assets/snacks/05.jpg';
-import ItemsComponents from '../items';
+import SlideImage0 from '@/components/images/snacks/00.jpg';
+import SlideImage1 from '@/components/images/snacks/01.jpg';
+import SlideImage2 from '@/components/images/snacks/02.jpg';
+import SlideImage3 from '@/components/images/snacks/03.jpg';
+import SlideImage4 from '@/components/images/snacks/04.jpg';
+import SlideImage5 from '@/components/images/snacks/05.jpg';
+import ItemsComponents from '@/components/items';
 
 const snacks = [
     {
@@ -59,8 +58,10 @@ const snacks = [
     }
 ];
 
-export default function SnacksComponent({ onAddToCart, isItemInCart }: OrderComponentProps) {
-
+export default function SnacksComponent({
+    onAddToCart,
+    isItemInCart
+}: OrderComponentProps) {
     return (
         <div className='w-full min-h-screen flex flex-col items-center xl:max-h-full px-3 pb-9' id='snacks'>
             <h2 className='text-center font-bold text-4xl cursor-default'>Petiscos</h2>
@@ -81,4 +82,4 @@ export default function SnacksComponent({ onAddToCart, isItemInCart }: OrderComp
             </div>
         </div>
     );
-};
+}

@@ -1,26 +1,34 @@
-'use client';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Navigation, Autoplay } from 'swiper/modules';
+import {
+    Swiper,
+    SwiperSlide
+} from 'swiper/react';
+import {
+    Pagination,
+    Navigation,
+    Autoplay
+} from 'swiper/modules';
 import Image from 'next/image';
-import SlideImage0 from '@/assets/pizzeria/00.jpg';
-import SlideImage1 from '@/assets/pizzeria/01.jpg';
-import SlideImage2 from '@/assets/pizzeria/02.jpg';
-import SlideImage3 from '@/assets/pizzeria/03.jpg';
-import SlideImage4 from '@/assets/pizzeria/04.jpg';
-import SlideImage5 from '@/assets/pizzeria/05.jpg';
-import SlideImage6 from '@/assets/pizzeria/06.jpg';
-import SlideImage7 from '@/assets/pizzeria/07.jpg';
-import SlideImage8 from '@/assets/pizzeria/08.jpg';
-import SlideImage9 from '@/assets/pizzeria/09.jpg';
-import SlideImage10 from '@/assets/pizzeria/10.jpg';
+import SlideImage0 from '@/components/images/pizzeria/00.jpg';
+import SlideImage1 from '@/components/images/pizzeria/01.jpg';
+import SlideImage2 from '@/components/images/pizzeria/02.jpg';
+import SlideImage3 from '@/components/images/pizzeria/03.jpg';
+import SlideImage4 from '@/components/images/pizzeria/04.jpg';
+import SlideImage5 from '@/components/images/pizzeria/05.jpg';
+import SlideImage6 from '@/components/images/pizzeria/06.jpg';
+import SlideImage7 from '@/components/images/pizzeria/07.jpg';
+import SlideImage8 from '@/components/images/pizzeria/08.jpg';
+import SlideImage9 from '@/components/images/pizzeria/09.jpg';
+import SlideImage10 from '@/components/images/pizzeria/10.jpg';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 export default function PromotionComponent() {
-
     return (
-        <div className='flex w-full max-h-screen xl:max-h-full' id='promotion'>
+        <div
+            className='flex w-full max-h-full xl:max-h-screen'
+            id='promotion'
+        >
             <Swiper
                 slidesPerView={1}
                 spaceBetween={0}
@@ -132,4 +140,4 @@ export default function PromotionComponent() {
             </Swiper>
         </div>
     );
-};
+}

@@ -1,18 +1,13 @@
-module.exports = {
+import type { Config } from "tailwindcss";
+
+export default {
   content: [
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
-      screens: {
-        'lg': { 'max': '1440px' },
-        'xl': { 'max': '1280px' },
-        'md': { 'max': '960px' },
-        'sm': { 'max': '790px' }
-      },
       keyframes: {
         detailsmsgDown: {
           '0%': { opacity: '0', transform: 'translate3d(0, -30%, 0)' },
@@ -21,9 +16,9 @@ module.exports = {
         detailsmsgUp: {
           '0%': { opacity: '1', transform: 'translate3d(0, 0, 0)' },
           '100%': { opacity: '0', transform: 'translate3d(0, -30%, 0)' }
-        }
-      }
-    }
+        },
+      },
+    },
   },
   plugins: [],
-};
+} satisfies Config;

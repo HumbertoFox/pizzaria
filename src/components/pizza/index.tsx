@@ -1,12 +1,11 @@
-'use client';
 import { OrderComponentProps } from '@/interfaces/interfaces';
-import SlideImage0 from '@/assets/pizza/00.jpg';
-import SlideImage1 from '@/assets/pizza/01.jpg';
-import SlideImage2 from '@/assets/pizza/02.jpg';
-import SlideImage3 from '@/assets/pizza/03.jpg';
-import SlideImage4 from '@/assets/pizza/04.jpg';
-import SlideImage5 from '@/assets/pizza/05.jpg';
-import ItemsComponents from '../items';
+import SlideImage0 from '@/components/images/pizza/00.jpg';
+import SlideImage1 from '@/components/images/pizza/01.jpg';
+import SlideImage2 from '@/components/images/pizza/02.jpg';
+import SlideImage3 from '@/components/images/pizza/03.jpg';
+import SlideImage4 from '@/components/images/pizza/04.jpg';
+import SlideImage5 from '@/components/images/pizza/05.jpg';
+import ItemsComponents from '@/components/items';
 
 const pizzas = [
     {
@@ -60,7 +59,6 @@ const pizzas = [
 ];
 
 export default function PizzasComponent({ onAddToCart, isItemInCart }: OrderComponentProps) {
-
     return (
         <div className='w-full min-h-screen flex flex-col items-center xl:max-h-full px-3 pb-9' id='pizzas'>
             <h2 className='text-center font-bold text-4xl cursor-default'>Pizzas</h2>
@@ -81,4 +79,4 @@ export default function PizzasComponent({ onAddToCart, isItemInCart }: OrderComp
             </div>
         </div>
     );
-};
+}

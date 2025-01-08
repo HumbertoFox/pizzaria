@@ -1,11 +1,10 @@
-'use client';
 import { OrderComponentProps } from '@/interfaces/interfaces';
-import SlideImage0 from '@/assets/drinks/00.jpg';
-import SlideImage1 from '@/assets/drinks/01.jpg';
-import SlideImage2 from '@/assets/drinks/02.jpg';
-import SlideImage3 from '@/assets/drinks/03.jpg';
-import SlideImage4 from '@/assets/drinks/04.jpg';
-import SlideImage5 from '@/assets/drinks/05.jpg';
+import SlideImage0 from '@/components/images/drinks/00.jpg';
+import SlideImage1 from '@/components/images/drinks/01.jpg';
+import SlideImage2 from '@/components/images/drinks/02.jpg';
+import SlideImage3 from '@/components/images/drinks/03.jpg';
+import SlideImage4 from '@/components/images/drinks/04.jpg';
+import SlideImage5 from '@/components/images/drinks/05.jpg';
 import ItemsComponents from '../items';
 
 const drinks = [
@@ -60,7 +59,6 @@ const drinks = [
 ];
 
 export default function DrinksComponent({ onAddToCart, isItemInCart }: OrderComponentProps) {
-
     return (
         <div className='w-full min-h-screen flex flex-col items-center xl:max-h-full px-3 pb-9' id='drinks'>
             <h2 className='text-center font-bold text-4xl cursor-default'>Bebidas</h2>
@@ -81,4 +79,4 @@ export default function DrinksComponent({ onAddToCart, isItemInCart }: OrderComp
             </div>
         </div>
     );
-};
+}

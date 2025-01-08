@@ -1,12 +1,11 @@
-'use client';
 import { OrderComponentProps } from '@/interfaces/interfaces';
-import SlideImage0 from '@/assets/dishes/00.jpg';
-import SlideImage1 from '@/assets/dishes/01.jpg';
-import SlideImage2 from '@/assets/dishes/02.jpg';
-import SlideImage3 from '@/assets/dishes/03.jpg';
-import SlideImage4 from '@/assets/dishes/04.jpg';
-import SlideImage5 from '@/assets/dishes/05.jpg';
-import ItemsComponents from '../items';
+import SlideImage0 from '@/components/images/dishes/00.jpg';
+import SlideImage1 from '@/components/images/dishes/01.jpg';
+import SlideImage2 from '@/components/images/dishes/02.jpg';
+import SlideImage3 from '@/components/images/dishes/03.jpg';
+import SlideImage4 from '@/components/images/dishes/04.jpg';
+import SlideImage5 from '@/components/images/dishes/05.jpg';
+import ItemsComponents from '@/components/items';
 
 const dishes = [
     {
@@ -59,8 +58,10 @@ const dishes = [
     }
 ];
 
-export default function DishesComponent({ onAddToCart, isItemInCart }: OrderComponentProps) {
-
+export default function DishesComponent({
+    onAddToCart,
+    isItemInCart
+}: OrderComponentProps) {
     return (
         <div className='w-full min-h-screen flex flex-col items-center xl:max-h-full px-3 pb-9' id='dishes'>
             <h2 className='text-center font-bold text-4xl cursor-default'>Pratos</h2>
@@ -81,4 +82,4 @@ export default function DishesComponent({ onAddToCart, isItemInCart }: OrderComp
             </div>
         </div>
     );
-};
+}

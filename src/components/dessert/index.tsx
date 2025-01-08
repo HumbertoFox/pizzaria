@@ -1,12 +1,11 @@
-'use client';
 import { OrderComponentProps } from '@/interfaces/interfaces';
-import SlideImage0 from '@/assets/dessert/00.jpg';
-import SlideImage1 from '@/assets/dessert/01.jpg';
-import SlideImage2 from '@/assets/dessert/02.jpg';
-import SlideImage3 from '@/assets/dessert/03.jpg';
-import SlideImage4 from '@/assets/dessert/04.jpg';
-import SlideImage5 from '@/assets/dessert/05.jpg';
-import ItemsComponents from '../items';
+import SlideImage0 from '@/components/images/dessert/00.jpg';
+import SlideImage1 from '@/components/images/dessert/01.jpg';
+import SlideImage2 from '@/components/images/dessert/02.jpg';
+import SlideImage3 from '@/components/images/dessert/03.jpg';
+import SlideImage4 from '@/components/images/dessert/04.jpg';
+import SlideImage5 from '@/components/images/dessert/05.jpg';
+import ItemsComponents from '@/components/items';
 
 const desserts = [
     {
@@ -60,7 +59,6 @@ const desserts = [
 ];
 
 export default function DessertComponent({ onAddToCart, isItemInCart }: OrderComponentProps) {
-
     return (
         <div className='w-full min-h-screen flex flex-col items-center xl:max-h-full px-3 pb-9' id='dessert'>
             <h2 className='text-center font-bold text-4xl cursor-default'>Sobremesas</h2>
@@ -81,4 +79,4 @@ export default function DessertComponent({ onAddToCart, isItemInCart }: OrderCom
             </div>
         </div>
     );
-};
+}

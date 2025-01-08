@@ -1,12 +1,11 @@
-'use client';
 import { OrderComponentProps } from '@/interfaces/interfaces';
-import SlideImage0 from '@/assets/pasta/00.jpg';
-import SlideImage1 from '@/assets/pasta/01.jpg';
-import SlideImage2 from '@/assets/pasta/02.jpg';
-import SlideImage3 from '@/assets/pasta/03.jpg';
-import SlideImage4 from '@/assets/pasta/04.jpg';
-import SlideImage5 from '@/assets/pasta/05.jpg';
-import ItemsComponents from '../items';
+import SlideImage0 from '@/components/images/pasta/00.jpg';
+import SlideImage1 from '@/components/images/pasta/01.jpg';
+import SlideImage2 from '@/components/images/pasta/02.jpg';
+import SlideImage3 from '@/components/images/pasta/03.jpg';
+import SlideImage4 from '@/components/images/pasta/04.jpg';
+import SlideImage5 from '@/components/images/pasta/05.jpg';
+import ItemsComponents from '@/components/items';
 
 const pastas = [
     {
@@ -60,7 +59,6 @@ const pastas = [
 ];
 
 export default function PastaComponent({ onAddToCart, isItemInCart }: OrderComponentProps) {
-
     return (
         <div className='w-full min-h-screen flex flex-col items-center xl:max-h-full px-3 pb-9' id='pasta'>
             <h2 className='text-center font-bold text-4xl cursor-default'>Massas</h2>
@@ -81,4 +79,4 @@ export default function PastaComponent({ onAddToCart, isItemInCart }: OrderCompo
             </div>
         </div>
     );
-};
+}
